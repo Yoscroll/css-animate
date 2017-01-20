@@ -1,4 +1,4 @@
-#rotate, #skew, #all, #animate{
+#rotate, #skew, #all, #animate, #css, #js{
   border: 2px solid #000;
   width: 200px;
   height: 200px;
@@ -11,3 +11,6 @@ h3{
   text-align: center;
 }
 
+#but{
+	margin-left: 10px;
+}

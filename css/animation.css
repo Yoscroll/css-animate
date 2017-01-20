@@ -1,0 +1,48 @@
+#rotate{
+	transform: rotate(10deg);
+}
+#skew{
+	transform: skew(10deg,10deg);
+}
+#all{
+	transform: rotate(110deg) skew(10deg,10deg);
+}
+
+@keyframes roll{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		background-color: salmon;
+	}
+	100%{
+		transform: rotate(360deg);
+		background-color: white;
+	}
+}
+
+#animate{
+	transform: rotate(0deg);
+	animation-name: roll;
+    animation-duration: 4s;
+}
+
+@keyframes slide{
+	0%{
+    margin-left:10px;
+    background-color: salmon;
+  }
+  
+  50% {
+    margin-left:85%;
+    background-color: lightgreen;
+  }
+  100% {
+    margin-left:10px;
+    background-color: white;
+  }
+}
+#css:hover{
+	animation-duration: 3s;
+  	animation-name: slide;
+}
